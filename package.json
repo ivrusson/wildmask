@@ -8,10 +8,23 @@
     "cli",
     "tui",
     "dev-tools",
-    "local-development"
+    "local-development",
+    "dns-server",
+    "wildcard",
+    "reverse-proxy",
+    "localhost",
+    "development"
   ],
-  "author": "Ivan Rubio",
+  "author": "Ivan Rubio <ivan@example.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivrusson/wildmask.git"
+  },
+  "homepage": "https://github.com/ivrusson/wildmask#readme",
+  "bugs": {
+    "url": "https://github.com/ivrusson/wildmask/issues"
+  },
   "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18.0.0"

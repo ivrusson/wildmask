@@ -14,10 +14,12 @@ coverage/
 # Development
 .github/
 .vscode/
-docs/
-scripts/
 *.log
 .turbo/
+
+# Keep these for users
+!scripts/postinstall.js
+!docs/
 
 # Build artifacts
 .tsbuildinfo

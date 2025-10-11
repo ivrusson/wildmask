@@ -17,9 +17,9 @@ coverage/
 *.log
 .turbo/
 
-# Keep these for users
+# Scripts - keep only postinstall
+scripts/*
 !scripts/postinstall.js
-!docs/
 
 # Build artifacts
 .tsbuildinfo

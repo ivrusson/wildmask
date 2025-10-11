@@ -1,0 +1,37 @@
+{
+  "name": "@wildmask/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "wildmask": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@wildmask/core": "workspace:*",
+    "@wildmask/dns-daemon": "workspace:*",
+    "@wildmask/health": "workspace:*",
+    "@wildmask/types": "workspace:*",
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.3",
+    "commander": "^12.0.0",
+    "ora": "^8.0.1",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  }
+}

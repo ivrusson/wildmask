@@ -1,6 +1,6 @@
 {
   "name": "wildmask",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "type": "module",
   "description": "Modern CLI + TUI for managing local DNS masks with wildcard support",
   "keywords": [
@@ -32,6 +32,17 @@
   "bin": {
     "wildmask": "./packages/cli/dist/cli.js"
   },
+  "files": [
+    "packages/*/dist/**/*",
+    "packages/*/package.json",
+    "packages/dns-daemon/src/dns-packet.d.ts",
+    "packages/tui/src/**/*.tsx",
+    "scripts/postinstall.js",
+    "docs/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",

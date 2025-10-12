@@ -164,7 +164,7 @@ export const App: React.FC = () => {
 
   return (
     <Dashboard
-      version="0.1.0"
+      version="0.1.3"
       domain={domain}
       mappings={mappings}
       daemonStatus={daemonStatus}

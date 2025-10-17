@@ -1,7 +1,7 @@
 {
   "name": "wildmask",
   "version": "0.1.4",
-  "type": "module",
+  "type": "commonjs",
   "description": "🎭 Modern CLI + TUI for managing local DNS masks",
   "keywords": [
     "dns",
@@ -28,24 +28,23 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/cli.js",
   "bin": {
     "wildmask": "./dist/cli.js"
   },
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": "./dist/cli.js"
     }
   },
   "files": [
-    "dist/**/*",
+    "dist/cli.js",
     "README.md",
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && pnpm bundle",
+    "bundle": "esbuild src/cli.ts --bundle --platform=node --target=node18 --format=cjs --outfile=dist/cli.js",
     "dev": "tsc --watch",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf dist",
@@ -64,6 +63,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
+    "esbuild": "^0.19.12",
     "typescript": "^5.3.3"
   }
 }

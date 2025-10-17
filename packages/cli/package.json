@@ -1,7 +1,33 @@
 {
-  "name": "@wildmask/cli",
-  "version": "0.1.0",
+  "name": "wildmask",
+  "version": "0.1.3",
   "type": "module",
+  "description": "🎭 Modern CLI + TUI for managing local DNS masks",
+  "keywords": [
+    "dns",
+    "cli",
+    "tui",
+    "dev-tools",
+    "local-development",
+    "dns-server",
+    "wildcard",
+    "reverse-proxy",
+    "localhost",
+    "development"
+  ],
+  "author": "Ivan Rubio <ivan@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivrusson/wildmask.git"
+  },
+  "homepage": "https://github.com/ivrusson/wildmask#readme",
+  "bugs": {
+    "url": "https://github.com/ivrusson/wildmask/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
@@ -13,11 +39,17 @@
       "import": "./dist/index.js"
     }
   },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
     "typecheck": "tsc --noEmit",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm build"
   },
   "dependencies": {
     "@wildmask/core": "workspace:*",

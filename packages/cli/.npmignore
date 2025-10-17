@@ -1,0 +1,28 @@
+# Source files
+src/
+tsconfig.json
+
+# Development files
+node_modules/
+*.log
+.DS_Store
+
+# Test files
+**/*.test.ts
+**/*.test.js
+__tests__/
+
+# Development configs
+.eslintrc*
+.prettierrc*
+jest.config.*
+vitest.config.*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db

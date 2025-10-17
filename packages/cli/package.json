@@ -1,6 +1,6 @@
 {
   "name": "wildmask",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "type": "commonjs",
   "description": "🎭 Modern CLI + TUI for managing local DNS masks",
   "keywords": [

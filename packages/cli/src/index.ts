@@ -25,7 +25,7 @@ export function createCLI(): Command {
   program
     .name('wildmask')
     .description('🎭 Modern CLI + TUI for managing local DNS masks')
-    .version('0.1.4');
+    .version('0.1.5');
 
   // Register commands
   program.addCommand(createSetupCommand());
